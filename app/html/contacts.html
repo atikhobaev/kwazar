@@ -1,0 +1,113 @@
+@@include('./src/header.html')
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+            <h2>Контактная информация</h2>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h3>ООО "ТСК Квазар"</h3>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-lg fa-envelope text-warning"></i>&nbsp; tsk3@kwazar.ru &nbsp;
+                            <a href="mailto:tsk3@kwazar.ru" class="btn btn-xs btn-warning">Написать нам</a>
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-lg fa-phone text-success"></i>&nbsp; +7 (383) 308-70-90 &nbsp;
+                            <a href="tel:+73833087090" class="btn btn-xs btn-success">Позвонить нам</a>
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-lg fa-skype text-info"></i>&nbsp; tsk-kwazar &nbsp;
+                            <a href="callto:tsk3@kwazar.ru" class="btn btn-xs btn-info">Позвонить нам в Skype</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <h5>Заказать обратный звонок</h5>
+                        <div class="form-group form-group-sm">
+                            <label class="sr-only">Заказать обратный звонок</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Номер телефона">
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-kwazar">Заказать звонок</button>
+                    </form>
+                    <br>
+                    <h4>Офис на Студентческой</h4>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-lg fa-map-marker"></i>&nbsp; пр. Карла Маркса, дом 47/1, офис 10
+                            <button id='open-popup-avr' class="btn btn-xs btn-default">Показать на карте</button>
+                        </li>
+                        <li><i class="fa-li fa fa-lg fa-clock-o"></i>&nbsp; 8.30 - 17.30</li>
+                        <li>
+                            <i class="fa-li fa fa-lg fa-clock-o text-danger"></i>&nbsp; суббота, воскресенье
+                        </li>
+                    </ul>
+                    <h4>Офис в пос.Краснообск</h4>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-lg fa-map-marker"></i>&nbsp; пос. Краснообск, СибИМЭ, 1 этаж, оф.145
+                            <button id='open-popup-krasnoobsk' class="btn btn-xs btn-default">Показать на карте</button>
+                        </li>
+                        <li><i class="fa-li fa fa-lg fa-clock-o"></i>&nbsp; 8.30 - 17.30</li>
+                        <li>
+                            <i class="fa-li fa fa-lg fa-clock-o text-danger"></i>&nbsp; суббота, воскресенье
+                        </li>
+                    </ul>
+                    <h4>Склад</h4>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-lg fa-map-marker"></i>&nbsp; Советское шоссе, 5а к1
+                            <button id='open-popup-sklad' class="btn btn-xs btn-default">Показать на карте</button>
+                        </li>
+                        <li><i class="fa-li fa fa-lg fa-clock-o"></i>&nbsp; 8.30 - 17.30, без перерыва на обед.</li>
+                        <li>
+                            <i class="fa-li fa fa-lg fa-clock-o text-danger"></i>&nbsp; суббота, воскресенье
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <button id='open-popup-all' class="btn btn-xs btn-default pull-right">Показать все филиалы</button>
+                    <div id="map" style="width:100%; height:400px"></div>
+                    <script type="text/javascript">
+
+                        DG.then(function () {
+                            var map,
+                                marker_avr,
+                                marker_krasnoobsk,
+                                marker_sklad;
+
+                            map = DG.map('map', {
+                                center: [54.95,82.935], 
+                                zoom: 11
+                            });
+
+                            marker_avr = DG.marker([54.991899, 82.908336],{label : 'Офис на Студентческой'}).addTo(map).bindPopup('<b>Офис на Студентческой</b><br />пр. Карла Маркса, дом 47/1, офис 10');
+                            marker_krasnoobsk = DG.marker([54.916463, 82.992434],{label : 'Офис в пос.Краснообск'}).addTo(map).bindPopup('<b>Офис в пос.Краснообск</b><br />пос. Краснообск, СибИМЭ, 1 этаж, оф.145');
+                            marker_sklad = DG.marker([54.920944, 82.950194],{label : 'Склад'}).addTo(map).bindPopup('<b>Склад</b><br />Советское шоссе, 5а к1');
+
+                            document.getElementById("open-popup-all").onclick = function(){
+                                map.setView([54.95, 82.935],11);
+                                marker_avr.closePopup();
+                                marker_krasnoobsk.closePopup();
+                                marker_sklad.closePopup();
+                            }
+                            document.getElementById("open-popup-avr").onclick = function(){
+                                marker_avr.openPopup();
+                                map.setView([54.991899, 82.908336],16);
+                            }
+                            document.getElementById("open-popup-krasnoobsk").onclick = function(){
+                                marker_krasnoobsk.openPopup();
+                                map.setView([54.916463, 82.992434],16);
+                            }
+                            document.getElementById("open-popup-sklad").onclick = function(){
+                                marker_sklad.openPopup();
+                                map.setView([54.920944, 82.950194],16);
+                            }
+
+
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@@include('./src/footer.html')

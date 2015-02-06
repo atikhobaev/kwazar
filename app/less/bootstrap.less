@@ -1,0 +1,132 @@
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+//variables
+@brand-kwazar: #2C50A0;
+@brand-kwazar_lightblue: #5D7EC2;
+
+@btn-kwazar-color: #fff;
+@btn-kwazar-bg: @brand-kwazar;
+@btn-kwazar-border: darken(@btn-kwazar-bg, 5%);
+.btn-kwazar {
+    .button-variant(@btn-kwazar-color;
+    @btn-kwazar-bg;
+    @btn-kwazar-border);
+}
+
+
+@btn-kwazar_lightblue-color: #fff;
+@btn-kwazar_lightblue-bg: @brand-kwazar_lightblue;
+@btn-kwazar_lightblue-border: darken(@btn-kwazar_lightblue-bg, 5%);
+.btn-kwazar_lightblue {
+    .button-variant(@btn-kwazar_lightblue-color;
+    @btn-kwazar_lightblue-bg;
+    @btn-kwazar_lightblue-border);
+}
+
+
+// Navbar
+@navbar-default-link-color: #fff;
+@navbar-default-link-hover-color: #fff;
+@navbar-default-link-hover-bg: #6A83BB;
+.navbar {
+    border: 0;
+    margin-bottom: 0;
+}
+.navbar-toggle {
+    padding: 6px 10px;
+}
+// Alternate navbars
+// --------------------------------------------------
+// Kwazar navbar
+.navbar-kwazar {
+    background-color: @navbar-default-bg;
+    border-color: @navbar-default-border;
+    .navbar-brand {
+        color: @navbar-default-brand-color;
+        &:hover, &:focus {
+            color: @navbar-default-brand-hover-color;
+            background-color: @navbar-default-brand-hover-bg;
+        }
+    }
+    .navbar-text {
+        color: @navbar-default-color;
+    }
+    .navbar-nav {
+        > li > a {
+            color: @navbar-default-link-color;
+            &:hover, &:focus {
+                color: @navbar-default-link-hover-color;
+                background-color: @navbar-default-link-hover-bg;
+            }
+        }
+        > .active > a {
+            &, &:hover, &:focus {
+                color: @navbar-default-link-active-color;
+                background-color: @navbar-default-link-active-bg;
+            }
+        }
+        > .disabled > a {
+            &, &:hover, &:focus {
+                color: @navbar-default-link-disabled-color;
+                background-color: @navbar-default-link-disabled-bg;
+            }
+        }
+    }
+    
+    .navbar-collapse, .navbar-form {
+        border-color: @navbar-default-border;
+    }
+    // Dropdown menu items
+    .navbar-nav {
+        // Remove background color from open dropdown
+        > .open > a {
+            &, &:hover, &:focus {
+                background-color: @navbar-default-link-active-bg;
+                color: @navbar-default-link-active-color;
+            }
+        }
+        @media (max-width: @grid-float-breakpoint-max) {
+            // Dropdowns get custom display when collapsed
+            .open .dropdown-menu {
+                > li > a {
+                    color: @navbar-default-link-color;
+                    &:hover, &:focus {
+                        color: @navbar-default-link-hover-color;
+                        background-color: @navbar-default-link-hover-bg;
+                    }
+                }
+                > .active > a {
+                    &, &:hover, &:focus {
+                        color: @navbar-default-link-active-color;
+                        background-color: @navbar-default-link-active-bg;
+                    }
+                }
+                > .disabled > a {
+                    &, &:hover, &:focus {
+                        color: @navbar-default-link-disabled-color;
+                        background-color: @navbar-default-link-disabled-bg;
+                    }
+                }
+            }
+        }
+    }
+    // Links in navbars
+    //
+    // Add a class to ensure links outside the navbar nav are colored correctly.
+    .navbar-link {
+        color: @navbar-default-link-color;
+        &:hover {
+            color: @navbar-default-link-hover-color;
+        }
+    }
+    .btn-link {
+        color: @navbar-default-link-color;
+        &:hover, &:focus {
+            color: @navbar-default-link-hover-color;
+        }
+        &[disabled], fieldset[disabled] & {
+            &:hover, &:focus {
+                color: @navbar-default-link-disabled-color;
+            }
+        }
+    }
+}

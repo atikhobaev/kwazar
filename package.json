@@ -1,0 +1,17 @@
+{
+  "name": "PROJECTNAME",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-connect": "latest",
+    "gulp-ftp": "latest",
+    "gulp-util": "latest",
+    "gulp-less": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-uncss": "latest",
+    "gulp-file-include": "latest"
+  }
+}
