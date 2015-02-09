@@ -65,7 +65,6 @@ gulp.task('ftp', function () {
         .pipe(ftp({
             host: 'tempus.timeweb.ru',
             user: 'faster96',
-            pass: 'quiSKI1G',
             remotePath: '/atikhobaevru/public_html/kwazar/'
         }))
         // you need to have some kind of stream after gulp-ftp to make sure it's flushed
