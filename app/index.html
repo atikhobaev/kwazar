@@ -29,7 +29,7 @@
                                         <span class="sr-only">Toggle navigation</span>
                                         <i class="fa fa-bars fa-2x"></i>
                                     </a>
-                                    <a class="navbar-brand logo" href="#" title="На главную">КВАЗАР</a>
+                                    <a class="navbar-brand logo" href="./index.html" title="На главную">КВАЗАР</a>
                                     <div class="visible-xs-block text-center navbar-text">
                                         <a class="btn btn-kwazar_lightblue" href="tel:+73833087090"><b>(383) 308-70-90</b></a>
                                     </div>
@@ -37,39 +37,31 @@
 
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <ul class="nav navbar-nav pull-right hidden-xs-block">
-                                        <li><a href="+73833087090"><b>(383) 308-70-90</b></a>
+                                    <ul title="Позвонить нам" class="nav navbar-nav pull-right hidden-xs">
+                                        <li><a href="#"><b><i class="fa fa-lg fa-shopping-cart"></i> Корзина</b></a>
+                                        </li>
+                                        <li><a href="+73833087090"><b><i class="fa fa-lg fa-phone"></i> (383) 308-70-90</b></a>
                                         </li>
                                     </ul>
                                     <ul class="nav navbar-nav">
-                                        <li class="active"><a href="#">Каталог <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li><a href="#">Услуги</a>
-                                        </li>
-                                        <li><a href="#">Полезные справочники</a>
-                                        </li>
-                                        <li><a href="#">О компании</a>
-                                        </li>
-                                        <li><a href="#">Вакансии</a>
-                                        </li>
-                                        <li><a href="#">Контактная информация</a>
-                                        </li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                                Каталог<span class="sr-only">(current)</span><span class="caret"></span>
+                                            </a>
                                             <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">One more separated link</a>
+                                                <li><a href="./product.html">Страница товара</a>
                                                 </li>
                                             </ul>
+                                        </li>
+                                        <li><a href="./services.html">Услуги</a>
+                                        </li>
+                                        <li class="active"><a href="#">Полезные справочники</a>
+                                        </li>
+                                        <li><a href="./company.html">О компании</a>
+                                        </li>
+                                        <li><a href="./vacancy.html">Вакансии</a>
+                                        </li>
+                                        <li><a href="./contacts.html">Контактная информация</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -251,90 +243,299 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <h2>Уважаемые посетители сайта!</h2>
-                    <p>Здесь Вы не только можете посмотреть ассортимент и цены на наш товар, но и получить более подробную информацию о конкретных позициях, а так же сформировать и отправить в наш офис предварительную заявку на выписку счета. Для того чтобы получить дополнительную информацию по товару необходимо щелкнуть мышью по наименованию товара. В открывшемся окне будет представлена вся имеющаяся у нас информация о данном товаре. Для того чтобы поместить выбранный товар в Счет-проект щелкните мышью на значке в правой колонке списка товаров.</p>
+                    <br>
+                    <div class="fotorama hidden-xs">
+                        <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/1000x250/2C50A0/FFF/?text=SLIDE+1">
+                        <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/1000x250/2C50A0/FFF/?text=SLIDE+2">
+                        <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/1000x250/2C50A0/FFF/?text=SLIDE+3">
+                    </div>
+                    <br>
                     <div class="panel panel-default hidden-xs">
                         <!-- Default panel contents -->
                         <div class="panel-heading">
-                            <h3 class="panel-title">Горячие предложения</h3>
+                            <h3 class="panel-title">Горячие предложения <span class="glyphicon glyphicon-fire" aria-hidden="true"></span></h3>
                         </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <!-- <tr>
+                                        <th></th>
+                                        <th>Наименование</th>
+                                        <th>Ед.Изм.</th>
+                                        <th>Цена, руб.</th>
+                                    </tr> -->
 
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th>Наименование</th>
-									<th>Ед.Изм.</th>
-									<th>Цена, руб.</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Товар горячего предложения</td>
-									<td>Попугаи</td>
-									<td>1445 <i class="fa fa-rub"></i></td>
-								</tr>
-								<tr>
-									<td>Товар горячего предложения</td>
-									<td>Попугаи</td>
-									<td>1445 <i class="fa fa-rub"></i></td>
-								</tr>
-								<tr>
-									<td>Товар горячего предложения</td>
-									<td>Попугаи</td>
-									<td>1445 <i class="fa fa-rub"></i></td>
-								</tr>
-								<tr>
-									<td>Товар горячего предложения</td>
-									<td>Попугаи</td>
-									<td>1445 <i class="fa fa-rub"></i></td>
-								</tr>
-							</tbody>
-						</table>
+                                </thead>
+                                <tbody>
+                                    <tr class='clickableRow' href='./product.html'>
+                                        <td>
+                                            <a data-toggle="modal" href='#modal-id'>
+                                                <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/75x75/2C50A0/FFF/?text=TOBAP">
+                                            </a>
+                                            <div class="modal fade" id="modal-id">
+                                                <div class="modal-dialog">
+                                                    <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/500x500/2C50A0/FFF/?text=TOBAP">
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
+                                        </td>
+                                        <td>
+                                            <strong>Товар горячего предложения</strong>
+                                            <dl class="small text-muted">
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Цвет</dt>
+                                                    <dd>Рыжий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Материал</dt>
+                                                    <dd>Мягкий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Корпус</dt>
+                                                    <dd>Пупырчатый</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ножки</dt>
+                                                    <dd>Отсутствуют</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ручка</dt>
+                                                    <dd>Есть</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Оборотов в минуту</dt>
+                                                    <dd>9543575</dd>
+                                                </div>
+                                            </dl>
+                                        </td>
+                                        <td>шт</td>
+                                        <td>1445 <i class="fa fa-rub"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class='clickableRow' href='./product.html'>
+                                        <td>
+                                            <a data-toggle="modal" href='#modal-id'>
+                                                <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/75x75/2C50A0/FFF/?text=TOBAP">
+                                            </a>
+                                            <div class="modal fade" id="modal-id">
+                                                <div class="modal-dialog">
+                                                    <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/500x500/2C50A0/FFF/?text=TOBAP">
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
+                                        </td>
+                                        <td>
+                                            <strong>Товар горячего предложения</strong>
+                                            <dl class="small text-muted">
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Цвет</dt>
+                                                    <dd>Рыжий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Материал</dt>
+                                                    <dd>Мягкий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Корпус</dt>
+                                                    <dd>Пупырчатый</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ножки</dt>
+                                                    <dd>Отсутствуют</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ручка</dt>
+                                                    <dd>Есть</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Оборотов в минуту</dt>
+                                                    <dd>9543575</dd>
+                                                </div>
+                                            </dl>
+                                        </td>
+                                        <td>шт</td>
+                                        <td>1445 <i class="fa fa-rub"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class='clickableRow' href='./product.html'>
+                                        <td>
+                                            <a data-toggle="modal" href='#modal-id'>
+                                                <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/75x75/2C50A0/FFF/?text=TOBAP">
+                                            </a>
+                                            <div class="modal fade" id="modal-id">
+                                                <div class="modal-dialog">
+                                                    <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/500x500/2C50A0/FFF/?text=TOBAP">
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
+                                        </td>
+                                        <td>
+                                            <strong>Товар горячего предложения</strong>
+                                            <dl class="small text-muted">
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Цвет</dt>
+                                                    <dd>Рыжий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Материал</dt>
+                                                    <dd>Мягкий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Корпус</dt>
+                                                    <dd>Пупырчатый</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ножки</dt>
+                                                    <dd>Отсутствуют</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ручка</dt>
+                                                    <dd>Есть</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Оборотов в минуту</dt>
+                                                    <dd>9543575</dd>
+                                                </div>
+                                            </dl>
+                                        </td>
+                                        <td>шт</td>
+                                        <td>1445 <i class="fa fa-rub"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class='clickableRow' href='./product.html'>
+                                        <td>
+                                            <a data-toggle="modal" href='#modal-id'>
+                                                <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/75x75/2C50A0/FFF/?text=TOBAP">
+                                            </a>
+                                            <div class="modal fade" id="modal-id">
+                                                <div class="modal-dialog">
+                                                    <img class="img-responsive img-rounded" src="https://api.fnkr.net/testimg/500x500/2C50A0/FFF/?text=TOBAP">
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
+                                        </td>
+                                        <td>
+                                            <strong>Товар горячего предложения</strong>
+                                            <dl class="small text-muted">
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Цвет</dt>
+                                                    <dd>Рыжий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Материал</dt>
+                                                    <dd>Мягкий</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Корпус</dt>
+                                                    <dd>Пупырчатый</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ножки</dt>
+                                                    <dd>Отсутствуют</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Ручка</dt>
+                                                    <dd>Есть</dd>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                    <dt>Оборотов в минуту</dt>
+                                                    <dd>9543575</dd>
+                                                </div>
+                                            </dl>
+                                        </td>
+                                        <td>шт</td>
+                                        <td>1445 <i class="fa fa-rub"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
-	<footer>
-		<div class="container">
-			<span class="pull-right">© Квазар</span>
-		</div>
-	</footer>
-	<br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h5>Тестовая навигация по вёрстке:</h5>
-<ul>
-	<li><a href="./index.html">Главная</a></li>
-	<li><a href="./product.html">Страница товара</a></li>
-	<li><a href="./contacts.html">Контакты</a></li>
-	<li><a href="./test.html">Тестовая страница</a></li>
-</ul>
+<footer class="footer">
+<div class="container-fluid light">
+    <div class="container small">
+        <div class="hidden-xs col-xs-4 col-sm-2 col-md-2 col-lg-2">
+        	<h5>Покупателям</h5>
+        	<ul class="list-unstyled">
+        		<li><a href="#">list1</a></li>
+        		<li><a href="#">list2</a></li>
+        		<li><a href="#">list3</a></li>
+        		<li><a href="#">list4</a></li>
+        		<li><a href="#">list5</a></li>
+        	</ul>
+        </div>
+        <div class="hidden-xs col-xs-4 col-sm-2 col-md-2 col-lg-2">
+        	<h5>Магазин</h5>
+        	<ul class="list-unstyled">
+        		<li><a href="#">list1</a></li>
+        		<li><a href="#">list2</a></li>
+        		<li><a href="#">list3</a></li>
+        		<li><a href="#">list4</a></li>
+        		<li><a href="#">list5</a></li>
+        	</ul>
+        </div>
+        <div class="hidden-xs col-xs-4 col-sm-2 col-md-2 col-lg-2">
+        	<h5>Сотрудничество</h5>
+        	<ul class="list-unstyled">
+        		<li><a href="#">list1</a></li>
+        		<li><a href="#">list2</a></li>
+        		<li><a href="#">list3</a></li>
+        		<li><a href="#">list4</a></li>
+        		<li><a href="#">list5</a></li>
+        	</ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        	<br class="hidden-xs">
+        	<br>
+        	<a title="Позвонить нам" class="btn btn-kwazar btn-lg btn-block" href="tel:+73833087090">
+        		<i class="fa fa-lg fa-phone"></i> (383) 308-70-90
+        	</a>
+        	<br>
+        </div>
+    </div>
+</div>
+<div class="container-fluid dark">
+    <div class="container">
+        <br>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <nav class="navbar-kwazar">
+                <a class="navbar-brand logo" href="#" title="На главную">КВАЗАР</a>
+            </nav>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <dd class="small">
+            	Копирование и использование в коммерческих целях информации на сайте www.kwazar.ru допускается только с письменного одобрения Компании ООО "ТСК Квазар". Информация о товарах, их характеристиках и комплектации может содержать неточности. Допускается изменение информации администрацией сайта без предварительного уведомления пользователей. Уточняйте существенные для Вас характеристики и компоненты комплектации товаров при получении. Все цены указаны в рублях с учетом налогов, действующих на территории РФ.
+                <br>
+                <br>
+            </dd>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <span class="pull-right">© 2014-2015, Квазар</span>
+        </div>
+    </div>
+</div>
+</footer>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
-	<!-- 16 KB -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+<!-- 16 KB -->
+<script src="js/kwazar.js"></script>
 </body>
 
 </html>
+

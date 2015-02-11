@@ -5,9 +5,9 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     autoprefixer = require('gulp-autoprefixer'),
     connect = require('gulp-connect'),
-    gutil = require('gulp-util'),
-    ftp = require('gulp-ftp'),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+    requireDir = require('require-dir'),
+    dir = requireDir('./tasks');
 
 //connect
 gulp.task('connect', function() {
@@ -58,20 +58,6 @@ gulp.task('watch', function() {
     gulp.watch(['./app/html/src/*.html'], ['html']);
     gulp.watch(['./app/less/bootstrap.less'], ['bootstrap']);
     gulp.watch(['./app/less/src/*.less'], ['less']);
-});
-
-gulp.task('ftp', function () {
-    return gulp.src(['./app/**'])
-        .pipe(ftp({
-            host: 'tempus.timeweb.ru',
-            user: 'faster96',
-            pass: 'quiSKI1G',
-            remotePath: '/atikhobaevru/public_html/kwazar/'
-        }))
-        // you need to have some kind of stream after gulp-ftp to make sure it's flushed
-        // this can be a gulp plugin, gulp.dest, or any kind of stream
-        // here we use a passthrough stream
-        .pipe(gutil.noop());
 });
 
 //default

@@ -29,7 +29,7 @@
                                         <span class="sr-only">Toggle navigation</span>
                                         <i class="fa fa-bars fa-2x"></i>
                                     </a>
-                                    <a class="navbar-brand logo" href="#" title="На главную">КВАЗАР</a>
+                                    <a class="navbar-brand logo" href="./index.html" title="На главную">КВАЗАР</a>
                                     <div class="visible-xs-block text-center navbar-text">
                                         <a class="btn btn-kwazar_lightblue" href="tel:+73833087090"><b>(383) 308-70-90</b></a>
                                     </div>
@@ -37,39 +37,31 @@
 
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <ul class="nav navbar-nav pull-right hidden-xs-block">
-                                        <li><a href="+73833087090"><b>(383) 308-70-90</b></a>
+                                    <ul title="Позвонить нам" class="nav navbar-nav pull-right hidden-xs">
+                                        <li><a href="#"><b><i class="fa fa-lg fa-shopping-cart"></i> Корзина</b></a>
+                                        </li>
+                                        <li><a href="+73833087090"><b><i class="fa fa-lg fa-phone"></i> (383) 308-70-90</b></a>
                                         </li>
                                     </ul>
                                     <ul class="nav navbar-nav">
-                                        <li class="active"><a href="#">Каталог <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li><a href="#">Услуги</a>
-                                        </li>
-                                        <li><a href="#">Полезные справочники</a>
-                                        </li>
-                                        <li><a href="#">О компании</a>
-                                        </li>
-                                        <li><a href="#">Вакансии</a>
-                                        </li>
-                                        <li><a href="#">Контактная информация</a>
-                                        </li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                                Каталог<span class="sr-only">(current)</span><span class="caret"></span>
+                                            </a>
                                             <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">One more separated link</a>
+                                                <li><a href="./product.html">Страница товара</a>
                                                 </li>
                                             </ul>
+                                        </li>
+                                        <li><a href="./services.html">Услуги</a>
+                                        </li>
+                                        <li class="active"><a href="#">Полезные справочники</a>
+                                        </li>
+                                        <li><a href="./company.html">О компании</a>
+                                        </li>
+                                        <li><a href="./vacancy.html">Вакансии</a>
+                                        </li>
+                                        <li><a href="./contacts.html">Контактная информация</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -140,7 +132,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                     <h3>Фланец из нержавеющей стали (Ру 40 Ду 150-3 воротниковый )</h3>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <a href="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">
                             <img class="img-responsive" src="http://fakeimg.pl/300x300/2C50A0/FFF/?text=TOBAP+IMG1">
                         </a>
@@ -158,25 +150,28 @@
                         </div>
                         <br>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <table class="table">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <table class="table table-responsive">
                             <thead>
                                 <tr>
                                     <td><b>Основные характеристики</b></td>
+                                    <td></td>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Цена</td><td>24480 руб.</td>
-                                </tr>
                                 <tr>
                                     <td>Материал корпуса</td><td>нефрит</td>
                                 </tr>
                                 <tr>
                                     <td>Рабочая среда</td><td>далёкие галактики</td>
                                 </tr>
+                                <tr>
+                                    <td>Цена за кг</td><td><strong class="price">24480 руб.</strong></td>
+                                </tr>
                             </tbody>
                         </table>
+                        <button type="button" class="btn btn-kwazar btn-block">Купить <i class="fa fa-lg fa-cart-plus"></i></button>
+                        <br class="visible-xs">
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <ul class="nav nav-tabs" role="tablist" id="tovar-info">
@@ -188,7 +183,7 @@
 
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="characteristic">
-                                <table class="table table-hover table table-condensed">
+                                <table class="table table-hover table-condensed table-responsive">
                                     <thead>
                                         <tr>
                                             <td align="center"><b>Характеристика</b>
@@ -298,45 +293,82 @@
         </div>
     </div>
 </main>
-	<footer>
-		<div class="container">
-			<span class="pull-right">© Квазар</span>
-		</div>
-	</footer>
-	<br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h5>Тестовая навигация по вёрстке:</h5>
-<ul>
-	<li><a href="./index.html">Главная</a></li>
-	<li><a href="./product.html">Страница товара</a></li>
-	<li><a href="./contacts.html">Контакты</a></li>
-	<li><a href="./test.html">Тестовая страница</a></li>
-</ul>
+<footer class="footer">
+<div class="container-fluid light">
+    <div class="container small">
+        <div class="hidden-xs col-xs-4 col-sm-2 col-md-2 col-lg-2">
+        	<h5>Покупателям</h5>
+        	<ul class="list-unstyled">
+        		<li><a href="#">list1</a></li>
+        		<li><a href="#">list2</a></li>
+        		<li><a href="#">list3</a></li>
+        		<li><a href="#">list4</a></li>
+        		<li><a href="#">list5</a></li>
+        	</ul>
+        </div>
+        <div class="hidden-xs col-xs-4 col-sm-2 col-md-2 col-lg-2">
+        	<h5>Магазин</h5>
+        	<ul class="list-unstyled">
+        		<li><a href="#">list1</a></li>
+        		<li><a href="#">list2</a></li>
+        		<li><a href="#">list3</a></li>
+        		<li><a href="#">list4</a></li>
+        		<li><a href="#">list5</a></li>
+        	</ul>
+        </div>
+        <div class="hidden-xs col-xs-4 col-sm-2 col-md-2 col-lg-2">
+        	<h5>Сотрудничество</h5>
+        	<ul class="list-unstyled">
+        		<li><a href="#">list1</a></li>
+        		<li><a href="#">list2</a></li>
+        		<li><a href="#">list3</a></li>
+        		<li><a href="#">list4</a></li>
+        		<li><a href="#">list5</a></li>
+        	</ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        	<br class="hidden-xs">
+        	<br>
+        	<a title="Позвонить нам" class="btn btn-kwazar btn-lg btn-block" href="tel:+73833087090">
+        		<i class="fa fa-lg fa-phone"></i> (383) 308-70-90
+        	</a>
+        	<br>
+        </div>
+    </div>
+</div>
+<div class="container-fluid dark">
+    <div class="container">
+        <br>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <nav class="navbar-kwazar">
+                <a class="navbar-brand logo" href="#" title="На главную">КВАЗАР</a>
+            </nav>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <dd class="small">
+            	Копирование и использование в коммерческих целях информации на сайте www.kwazar.ru допускается только с письменного одобрения Компании ООО "ТСК Квазар". Информация о товарах, их характеристиках и комплектации может содержать неточности. Допускается изменение информации администрацией сайта без предварительного уведомления пользователей. Уточняйте существенные для Вас характеристики и компоненты комплектации товаров при получении. Все цены указаны в рублях с учетом налогов, действующих на территории РФ.
+                <br>
+                <br>
+            </dd>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <span class="pull-right">© 2014-2015, Квазар</span>
+        </div>
+    </div>
+</div>
+</footer>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
-	<!-- 16 KB -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+<!-- 16 KB -->
+<script src="js/kwazar.js"></script>
 </body>
 
 </html>
+

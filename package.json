@@ -6,12 +6,13 @@
     "gulp-autoprefixer": "latest",
     "gulp-concat-css": "latest",
     "gulp-connect": "latest",
+    "gulp-file-include": "latest",
     "gulp-ftp": "latest",
-    "gulp-util": "latest",
     "gulp-less": "latest",
     "gulp-minify-css": "latest",
     "gulp-rename": "latest",
     "gulp-uncss": "latest",
-    "gulp-file-include": "latest"
+    "gulp-util": "latest",
+    "require-dir": "^0.1.0"
   }
 }
